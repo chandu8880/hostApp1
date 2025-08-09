@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex-column {
+  flex-direction: column;
+}
+.d-flex-row {
+  flex-direction: row;
+}
+.d-flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.algin-items-center {
+  align-items: center;
+}
+.m-2{
+  margin: 8px;
+}
+.ml-auto{
+    margin-left: auto;
+}

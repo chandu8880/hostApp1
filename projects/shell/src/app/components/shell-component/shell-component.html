@@ -1,0 +1,15 @@
+<nav>
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a> |
+  <a routerLink="/user-management/users-list" routerLinkActive="active">User List</a> |
+  <a *ngIf="userRole == 'admin'" routerLink="/user-management/users-form"  routerLinkActive="active">User Form</a> |
+  <a href="#" (click)="logout()">Logout</a>
+
+  <div class="ml-auto">
+    <div class="badge badge-info">User Name : {{ userName }}</div>
+    <div class="badge badge-secondary">Role : {{ userRole }}</div>
+  </div>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,56 @@
+/* styles.css */
+
+/* Container styling */
+.user-list-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.user-list-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table styling */
+.user-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.user-list-container thead tr {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+
+.user-list-container th,
+.user-list-container td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Zebra striping for rows */
+.user-list-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect on rows */
+.user-list-container tbody tr:hover {
+  background-color: #e9f1ff;
+  cursor: pointer;
+}
+
+/* Message when no users found */
+.user-list-container p {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 15px;
+}

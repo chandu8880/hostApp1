@@ -1,0 +1,54 @@
+/* Add this to your global styles.css or component CSS */
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: #1e293b; /* Dark blue-gray */
+  color: #f8fafc; /* Light text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.15);
+}
+
+nav a {
+  color: #cbd5e1; /* Light gray */
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #38bdf8; /* Bright blue */
+  font-weight: 700;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav .ml-auto {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav .badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.badge-info {
+  background-color: #0284c7; /* blue-600 */
+  color: #e0f2fe; /* blue-100 */
+}
+
+.badge-secondary {
+  background-color: #64748b; /* slate-500 */
+  color: #f1f5f9; /* slate-100 */
+}
