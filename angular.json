@@ -29,7 +29,7 @@
 						"index": "projects/shell/src/index.html",
 						"extraWebpackConfig": "projects/shell/webpack.config.js",
 						"commonChunk": false,
-						"baseHref": "/shell/"
+						"baseHref": "/hostApp1/shell/"
 					},
 					"configurations": {
 						"production": {
@@ -46,7 +46,8 @@
 								}
 							],
 							"outputHashing": "all",
-							"extraWebpackConfig": "projects/shell/webpack.prod.config.js"
+							"extraWebpackConfig": "projects/shell/webpack.prod.config.js",
+							"baseHref": "/hostApp1/shell/"
 						},
 						"development": {
 							"optimization": false,
@@ -120,7 +121,7 @@
 						"index": "projects/dashboard/src/index.html",
 						"extraWebpackConfig": "projects/dashboard/webpack.config.js",
 						"commonChunk": false,
-						"baseHref": "/dashboard/"
+						"baseHref": "/hostApp1/dashboard/"
 					},
 					"configurations": {
 						"production": {
@@ -137,7 +138,8 @@
 								}
 							],
 							"outputHashing": "all",
-							"extraWebpackConfig": "projects/dashboard/webpack.prod.config.js"
+							"extraWebpackConfig": "projects/dashboard/webpack.prod.config.js",
+							"baseHref": "/hostApp1/dashboard/"
 						},
 						"development": {
 							"optimization": false,
@@ -211,7 +213,7 @@
 						"index": "projects/user-management/src/index.html",
 						"extraWebpackConfig": "projects/user-management/webpack.config.js",
 						"commonChunk": false,
-						"baseHref": "/user-management/"
+						"baseHref": "/hostApp1/user-management/"
 					},
 					"configurations": {
 						"production": {
@@ -228,7 +230,8 @@
 								}
 							],
 							"outputHashing": "all",
-							"extraWebpackConfig": "projects/user-management/webpack.prod.config.js"
+							"extraWebpackConfig": "projects/user-management/webpack.prod.config.js",
+							"baseHref": "/hostApp1/user-management/"
 						},
 						"development": {
 							"optimization": false,
