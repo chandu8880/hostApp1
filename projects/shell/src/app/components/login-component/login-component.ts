@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login-component',
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './login-component.html',
   styleUrl: './login-component.css'
 })
@@ -20,9 +20,11 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.credentials.email && this.credentials.password) {
-      this.auth.login(this.credentials);
-      this.router.navigate(['/']);
-      alert('Login successful!'); 
+      if (this.auth.login(this.credentials)) {
+        this.router.navigate(['/']);
+        alert('Login successful!');
+      } else
+        alert('Wrong Credentials');
     } else {
       this.errorMessage = 'Please enter username and password';
     }
